@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\HealthforTower.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
+    <Compile Include="Assets\Scripts\UpdateCubes.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Unity Projects/clicker/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
