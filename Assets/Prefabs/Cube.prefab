@@ -16,8 +16,9 @@ GameObject:
   - component: {fileID: 6878360639574150107}
   - component: {fileID: 6878360639574150109}
   - component: {fileID: 6878360639574150108}
+  - component: {fileID: 114438866311683200}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,3 +151,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70b498a2a05d3640bc56658e180ef76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114438866311683200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878360639574150084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d667617726b0c7548bc4050c671834d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 90

@@ -20,6 +20,7 @@ public class SpawnManager : MonoBehaviour
     {
         int spawnPointIndex = Random.Range(0, spawnPoint.Length);
         Instantiate(block, spawnPoint[spawnPointIndex].position, spawnPoint[spawnPointIndex].rotation);
+        
     }
 
     // Update is called once per frame

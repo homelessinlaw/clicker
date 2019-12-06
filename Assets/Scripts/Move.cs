@@ -17,6 +17,7 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speed += 0.009f;
         Vector3 pos = new Vector3(0, Time.deltaTime * speed, 0);
         boxTransform.position += pos;
        
