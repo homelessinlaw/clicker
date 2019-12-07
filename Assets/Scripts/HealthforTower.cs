@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthforTower : MonoBehaviour
 {
@@ -18,9 +19,13 @@ public class HealthforTower : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(this.gameObject);
+
             if (this.gameObject.name == "Tower")
-                Application.Quit();
+            {
+                Destroy(this.gameObject);
+                SceneManager.LoadScene("Menu");
+            }
+            Destroy(this.gameObject);
         }
     }
 }
