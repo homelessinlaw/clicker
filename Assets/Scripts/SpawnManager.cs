@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject block;
     public Transform[] spawnPoint;
  
-    private float timeSpawn = 1f;
+    private float timeSpawn = 0.5f;
     
     // Start is called before the first frame update
     void Start()
