@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageforTower : MonoBehaviour
 {
     HealthforTower towerHealth;
+    float damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class DamageforTower : MonoBehaviour
         {
             Destroy(this.gameObject);
             towerHealth = GameObject.Find(collision.gameObject.name).GetComponent<HealthforTower>();
-            towerHealth.health -= 30;
+            towerHealth.setDMG(this.gameObject.GetComponent<Enemy>().getDamage());
         }
     }
 }

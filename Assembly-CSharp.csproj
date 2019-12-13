@@ -63,11 +63,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AuotHeal.cs" />
+    <Compile Include="Assets\Scripts\BossEnemy.cs" />
     <Compile Include="Assets\Scripts\DamageforTower.cs" />
     <Compile Include="Assets\Scripts\Damager.cs" />
+    <Compile Include="Assets\Scripts\EasyEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\HealthAll.cs" />
+    <Compile Include="Assets\Scripts\HealthForCubes.cs" />
     <Compile Include="Assets\Scripts\HealthforTower.cs" />
+    <Compile Include="Assets\Scripts\LinearMove.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\SinMove.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
     <Compile Include="Assets\Scripts\UpdateCubes.cs" />
@@ -79,6 +87,12 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/Unity Projects/clicker/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Editor">
+      <HintPath>D:/Unity Projects/clicker/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaomiSupport">
+      <HintPath>D:/Unity Projects/clicker/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/Unity Projects/clicker/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -295,6 +309,12 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/Unity Projects/clicker/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>D:/Unity Projects/clicker/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>D:/Unity Projects/clicker/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Unity/2018.4.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

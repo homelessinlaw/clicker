@@ -5,41 +5,24 @@ using UnityEngine.EventSystems;
 
 public class Damager : MonoBehaviour, IPointerDownHandler
 {
-    Camera mainCamera;
-    Ray ray;
-    RaycastHit hit;
-    string hitedName;
-    HealthforTower hpBlock;
+   public float damage = 90;
+    public new Renderer  renderer;
 
-    public float damage = 90;
-    // Start is called before the first frame update
     void Start()
     {
-        mainCamera = GetComponent<Camera>();
-        hpBlock = GetComponent<HealthforTower>();
+      
     }
-
-    // Update is called once per frame
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //     ray = mainCamera.ScreenPointToRay(Input.mous);
-        //     if(Physics.Raycast(ray,out hit, 100))
-        //    { 
-        //        hitedName = hit.collider.name;
-        //        if (hitedName != "Tower")
-        //        {
-        //            hpBlock = GameObject.Find(hitedName).GetComponent<HealthforTower>();
-        //            hpBlock.health -= damage;
-        //            //Destroy(GameObject.Find(hitedName));
-        //        }
-        //    }
-        //}
+        if(this.GetComponent<HealthForCubes>().getHP() <= (this.GetComponent<Enemy>().getMaxHP()*0.5f))
+        {
+           
+            renderer.material.SetColor("_Color",Color.red);
+        }
     }
     public void OnPointerDown (PointerEventData eventData)
     {
-        hpBlock.health -= damage;
+        this.GetComponent<Enemy>().health.setDMG(damage);
 
     }
 }

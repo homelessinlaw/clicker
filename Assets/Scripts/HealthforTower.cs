@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class HealthforTower : MonoBehaviour
+public class HealthforTower : HealthAll
 {
-    public float health;
- 
-  
+    
     // Start is called before the first frame update
     void Start()
     {
-      
+        health = 100;
     }
 
     // Update is called once per frame
@@ -19,13 +17,8 @@ public class HealthforTower : MonoBehaviour
     {
         if (health <= 0)
         {
-
-            if (this.gameObject.name == "Tower")
-            {
                 Destroy(this.gameObject);
-                SceneManager.LoadScene("Menu");
-            }
-            Destroy(this.gameObject);
+                SceneManager.LoadScene("Menu");           
         }
     }
 }
